@@ -1,0 +1,16 @@
+{{ template "layout" .}}
+{{ define "main" }}
+
+  <form action="/result" method="POST">
+    <div class="my-box">
+      <label for="name"></label>
+      <input type="text" name="name" id="name" placeholder="Nama" required>
+    </div>
+    <div class="my-box">
+      <label for="message"></label>
+      <input type="text" name="message" id="message" placeholder="Pesan" required>
+    </div>
+    <input type="submit" value="Submit">
+  </form>
+
+{{ end }}

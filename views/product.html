@@ -1,0 +1,13 @@
+{{ template "layout" .}}
+{{ define "main"}}
+  
+  {{ range .}}
+    <div class="teal">Product Name: {{ .Name }}</div>
+    <div class="teal">
+      Product Stock: {{ .Stock }} 
+      <span class="red">({{ .StockStatus }})</span>
+    </div>
+    <br>
+  {{ end }}
+
+{{ end }}
